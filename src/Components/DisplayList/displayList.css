@@ -1,0 +1,44 @@
+
+.myList{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+}
+
+.myTask{
+   margin: 0;
+   padding: 0;
+}
+.listDate{
+    font-size: smaller;
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+.delBtn{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.styleIcon{
+    height: 20px;
+    width: 20px;
+}
+
+.statBtn{
+    background-color: green;
+    color: white;
+    border: none;
+    margin-right: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.onComplete{
+    text-decoration: line-through;
+}
