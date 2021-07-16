@@ -8,6 +8,7 @@ function AddList({ onSubmitToDo }) {
     const handleInputChange = (event) => {
         setInput(event.target.value)
     }
+
     const handleSubmit = (event) => {
         event.preventDefault()
         // console.log(input)

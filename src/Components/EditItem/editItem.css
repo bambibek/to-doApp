@@ -1,0 +1,33 @@
+.inputEdit{
+    width: 600px;
+    display: block;
+}
+
+.editTest{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    /* border: 1px solid red; */
+    font-size: 30px;
+    /* display: none;  */
+}
+
+.cancelBtn{
+position: absolute;
+top: 10%;
+right: 5%; 
+border: none;
+cursor: pointer;
+border-radius: 3px;
+
+}
+
+
+.subEditBtn{
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(31, 176, 233);
+    color: white;
+    font-size: 16px;
+}

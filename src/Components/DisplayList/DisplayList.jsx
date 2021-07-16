@@ -1,9 +1,13 @@
 import './displayList.css'
+import '../EditItem/editItem.css'
 import { MdDeleteForever } from "react-icons/md"
 import { BiCheck, BiTime } from "react-icons/bi"
-function DisplayList({ toDo, onDeleteToDo, onUpdateToDo }) {
+import { AiFillEdit } from "react-icons/ai"
+
+function DisplayList({ toDo, onDeleteToDo, onUpdateToDo, onEdit }) {
 
     return <div>
+
         <div className="myList">
             <div>
                 <p className={toDo.done ? "onComplete myTask" : "myTask"}>{toDo.title}</p>
@@ -11,10 +15,12 @@ function DisplayList({ toDo, onDeleteToDo, onUpdateToDo }) {
             </div>
 
             <div>
-                <button onClick={() => onUpdateToDo(toDo._id)} className="statBtn"> {toDo.done ? <BiCheck className="styleIcon" /> : <BiTime className="styleIcon" />} </button>
+                <button onClick={() => onEdit(toDo._id)} className="editBtn" ><AiFillEdit className="styleIcon" /></button>
+                <button onClick={() => onUpdateToDo(toDo._id)} className="statBtn"> {toDo.done ? <BiCheck className="styleIcon " /> : <BiTime className="styleIcon" />} </button>
                 <button onClick={() => onDeleteToDo(toDo._id)} className="delBtn"><MdDeleteForever className="styleIcon" /></button>
             </div>
         </div>
+
     </div>
 }
 

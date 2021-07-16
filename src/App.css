@@ -21,6 +21,9 @@ body{
    width: 800px;
 }
 
+.blur{
+  filter: blur(10px);
+}
 .listWrapper{
   background-color: rgba(155, 217, 251, 0.5);;
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
